@@ -44,8 +44,10 @@ struct HomeViewRow: View {
                         .bold()
                     // Description
                     Text(description)
+                        .multilineTextAlignment(.leading)
                         .padding(.bottom, 20)
                         .font(.caption)
+                        .foregroundColor(.black)
                     
                     // Icons
                     HStack {
@@ -78,6 +80,6 @@ struct HomeViewRow: View {
 
 struct HomeViewRow_Previews: PreviewProvider {
     static var previews: some View {
-        HomeViewRow(image: "swift", title: "Learn Swift", description: "some description", count: "10 Lessons", time: "2 Hour")
+        HomeViewRow(image: "swift", title: "Learn Swift", description: "some description some description some description some description some description", count: "10 Lessons", time: "2 Hour")
     }
 }
